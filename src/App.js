@@ -5,6 +5,11 @@ function App() {
   return (
     <div className="app">
       <h1>Facebook clone</h1>
+      {/* <Header /> */}
+      {/* app body */}
+      {/* <Sidebar /> */}
+      {/* <Feed />  */}
+      {/* <Widgets / > */}
     </div>
   );
 }
