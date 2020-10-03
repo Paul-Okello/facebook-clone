@@ -12,7 +12,7 @@ import ForumIcon from "@material-ui/icons/Forum";
 import NotificationsActiveIcon from "@material-ui/icons/NotificationsActive";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
-const Header = () => {
+function Header() {
   return (
     <div className="header">
       <div className="header__left">
@@ -22,10 +22,13 @@ const Header = () => {
         />
         <div className="header__input">
           <SearchIcon />
-          <input type="text" />
+          <input type="text" placeholder="Search Facebook" />
         </div>
       </div>
-      <div className="header__middle">
+      <div className="header__center">
+        <div className="header__option--active">
+          <HomeIcon fontSize="large" />
+        </div>
         <div className="header__option">
           <FlagIcon fontSize="large" />
         </div>
@@ -59,6 +62,6 @@ const Header = () => {
       </div>
     </div>
   );
-};
+}
 
 export default Header;
