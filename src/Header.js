@@ -26,7 +26,7 @@ function Header() {
         </div>
       </div>
       <div className="header__center">
-        <div className="header__option--active">
+        <div className="header__option header__option--active">
           <HomeIcon fontSize="large" />
         </div>
         <div className="header__option">
