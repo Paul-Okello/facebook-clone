@@ -8,14 +8,13 @@ import LocalHospitalIcon from "@material-ui/icons/LocalHospital";
 import React from "react";
 import "./Sidebar.css";
 import SidebarRow from "./SidebarRow";
+import { useStateValue } from "./StateProvider";
 
 function Sidebar() {
+  const [{ user }] = useStateValue();
   return (
     <div className="sidebar">
-      <SidebarRow
-        src="https://www.nj.com/resizer/h8MrN0-Nw5dB5FOmMVGMmfVKFJo=/450x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/SJGKVE5UNVESVCW7BBOHKQCZVE.jpg"
-        title="Paul Okello"
-      />
+      <SidebarRow src={user.photoURL} title={user.displayName} />
       <SidebarRow
         Icon={LocalHospitalIcon}
         title="COVID-19 Information Center"

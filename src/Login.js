@@ -13,7 +13,7 @@ const Login = () => {
       .signInWithPopup(provider)
       .then((result) => {
         dispatch({
-          types: actionTypes.SET_USER,
+          type: actionTypes.SET_USER,
           user: result.user,
         });
       })
